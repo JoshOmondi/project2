@@ -16,6 +16,7 @@ body {
     line-height: 1.5;
 }
 
+
 .container{
     display: flex;
     width: 90%;
@@ -30,12 +31,53 @@ header {
     text-align: center;
     margin-bottom: 20px;
     padding-top: 20px;
+    background-color: #1a3a5c;
+    color:#fff
+     
     
 }
 
+header a {
+    color: #cfe0f1;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.6em;
+    letter-spacing: 1px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color:#ffffff;
+}
+
+h2 {
+    padding-bottom: 5px;
+    color: #1a3a5c;
+    margin-top: 0;
+}
+
+h3 {
+    color: #15073d;
+    margin-bottom: 5px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
 nav {
+    align-self: flex-start;
+    position: sticky;
+    top: 20px;
+    padding-right: 20px;
     width: 180px;
     padding-bottom: 20px;
+    border-right: 1px solid #dddddd;
+
 }
 
 main {
@@ -52,15 +94,16 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #1a3a5c;
+    border-left: 3px solid transparent;
     display: block;
-    padding: 10px;
+    padding: 10px 13px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #2d2525;
+    background-color: #236188;
     color: #f5e9e9;
     text-decoration: none;
 }
@@ -69,18 +112,18 @@ main img {
     display: block;
     max-width: 100%;
     height: auto;
-    width: 200px;
+    width: 300px;
     border-radius: 9px;
     margin-bottom: 20px;
+    border: 2px solid #2d2525;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #1a3a5c;
     color: #fff;
-    bottom: 0;
-    width: 100%;
 }
 
 footer a {
@@ -96,8 +139,9 @@ footer a:hover {
 nav a:hover,
 nav a:focus,
 nav a:active {
-    background-color: #2d2525;
-    color: #f5e9e9;
+    background-color: #e8eef5;
+    border-left-color:#1a3a5c;
+    color: #330c0c;
 }
 
 @media (max-width: 1023px) {
@@ -107,7 +151,10 @@ nav a:active {
 
     nav {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 1px solid #dddddd;
+        position: static;
+        border-right: none;
+
     }
 
     main {
