@@ -154,7 +154,15 @@ nav a:active {
         margin-bottom: 1px solid #dddddd;
         position: static;
         border-right: none;
+        padding: 0 0 15px 0;
+        margin-bottom: 20px;
 
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     main {
